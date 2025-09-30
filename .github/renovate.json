@@ -1,0 +1,13 @@
+{
+  "extends": ["config:base"],
+  "packageRules": [
+    {
+      "matchManagers": ["terraform-provider"],
+      "matchPackageNames": ["azurerm"],
+      "rangeStrategy": "n-2",
+      "separateMajorMinor": false,
+      "separateMultipleMajor": false,
+      "respectLatest": false
+    }
+  ]
+}
